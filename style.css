@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(22, 22, 22);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  color: #fff;
+}
+
+.tweet {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid rgb(128, 128, 128);
+  max-width: 50%;
+  padding: 32px;
+}
+
+.tweet-user {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-user__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tweet-username {
+  margin-left: 10px;
+}
+
+.tweet-username .main {
+  font-weight: bold;
+}
+
+.tweet-username .submain {
+  font-size: 12px;
+  margin-top: 4px;
+  color: rgb(201, 201, 201);
+}
+
+.tweet-content {
+  border-bottom: 1px solid rgb(128, 128, 128);
+  border-top: 1px solid rgb(128, 128, 128);
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.tweet-content img {
+  border-radius: 10px;
+}
+
+.tweet-stats,
+.tweet-stat {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-stats {
+  border-bottom: 1px solid rgb(128, 128, 128);
+  padding-bottom: 20px;
+}
+
+.tweet-stat .amount {
+  font-weight: bold;
+}
+
+.tweet-stat {
+  margin-right: 20px;
+}
+
+.tweet-stat span {
+  font-weight: lighter;
+  font-size: 14px;
+  margin-left: 4px;
+  color: rgb(192, 192, 192);
+}
+
+.tweet-actions {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.tweet-action {
+  max-width: 28px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.tweet-action:hover {
+  opacity: 1;
+}
+
+.tweet-action__like .unliked-icon,
+.tweet-action__like.liked .liked-icon {
+  display: none;
+}
+
+.tweet-action__like.liked .unliked-icon,
+.tweet-action__like .liked-icon {
+  display: block;
+}
+
+.tweet-reply form {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tweet-reply textarea {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  font-size: 19px;
+  width: 100%;
+  display: block;
+  min-height: 60px;
+}
+
+.tweet-reply #reply {
+  border: none;
+  background: rgb(56, 128, 211);
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
+  border-radius: 20px;
+}

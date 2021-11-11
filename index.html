@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>JavaScript is the best programming language in the Galaxy</h1>
+    <a class="link" href="/lesson 1/index.html">Click me and you will die!</a>
+
+    <div class="tweet">
+      <div class="tweet-user">
+        <div
+          class="tweet-user__avatar"
+          style="background-image: url(./images/ava.jpeg)"
+        ></div>
+        <div class="tweet-username">
+          <div class="main">Yana Thompson</div>
+          <div class="submain">@thmpsn</div>
+        </div>
+      </div>
+
+      <div class="tweet-content">
+        <img src="./images/tweet.png" alt="" />
+      </div>
+      <div class="tweet-stats">
+        <div class="tweet-stat">
+          <div class="amount" id="retweets">229</div>
+          <span>retweets</span>
+        </div>
+        <div class="tweet-stat">
+          <div class="amount" id="likes">1932</div>
+          <span>likes</span>
+        </div>
+      </div>
+      <div class="tweet-actions" id="actions">
+        <div class="tweet-action__reply tweet-action">
+          <img src="./images/reply.svg" alt="" />
+        </div>
+        <div class="tweet-action__retweet tweet-action">
+          <img src="./images/retweet.svg" alt="" />
+        </div>
+        <div class="tweet-action__like tweet-action">
+          <img
+            class="liked-icon"
+            src="./images/like.svg"
+            alt="like tweet"
+            title="like tweet"
+          />
+          <img
+            class="unliked-icon"
+            src="./images/full-like.svg"
+            alt="unlike tweet"
+            title="unlike tweet"
+          />
+        </div>
+        <div class="tweet-action__sharet tweet-action">
+          <img src="./images/share.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="replies" id="replies"></div>
+
+      <div class="tweet-reply">
+        <form id="form">
+          <textarea
+            name="tweet"
+            placeholder="Tweet your reply"
+            id="tweet"
+          ></textarea>
+          <input type="submit" value="Reply" id="reply" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
