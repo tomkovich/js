@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your best audio player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/scss/reset.css" />
+    <link rel="stylesheet" href="./assets/scss/styles.css" />
+  </head>
+  <body>
+    <div class="root">
+      <h1>Music Player</h1>
+
+      <main class="app">
+        <div class="content">
+          <div class="handling">
+            <div class="handling-sound" title="Volume">
+              <svg class="icon-sound">
+                <use xlink:href="./assets/images/sprite.svg#sound"></use>
+              </svg>
+
+              <div class="volume">
+                <input
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  type="range"
+                  name="volume"
+                  value="0.5"
+                  class="controls-volume"
+                />
+              </div>
+            </div>
+
+            <div class="handling-repeat" title="Repeat">
+              <svg class="icon-repeat">
+                <use xlink:href="./assets/images/sprite.svg#repeat"></use>
+              </svg>
+            </div>
+
+            <div class="handling-shuffle" title="Shuffle">
+              <svg class="icon-shuffle">
+                <use xlink:href="./assets/images/sprite.svg#shuffle"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="current"></div>
+
+          <div class="list">
+            <p class="list-title">All tracks</p>
+
+            <div class="items"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="./assets/js/scripts.js"></script>
+  </body>
+</html>
